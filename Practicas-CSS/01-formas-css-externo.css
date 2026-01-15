@@ -1,0 +1,15 @@
+/* Hoja de estilos externa para 01-formas-css.html */
+
+.estilo-externo {
+    background-color: lightgreen;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px dashed green;
+}
+
+.texto-externo {
+    color: darkgreen;
+    font-style: italic;
+    font-size: 16px;
+}

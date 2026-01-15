@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Formas de Aplicar CSS</title>
+
+    <!-- Hoja de estilo interna -->
+    <style>
+        .estilo-interno {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .ejemplo {
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #ddd;
+        }
+
+        .titulo-ejemplo {
+            font-weight: bold;
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <!-- Hoja de estilo externa -->
+    <link rel="stylesheet" href="01-formas-css-externo.css">
+</head>
+<body>
+    <h1>3 Formas de Aplicar CSS a HTML</h1>
+
+    <div class="ejemplo">
+        <div class="titulo-ejemplo">1. Estilo en línea (inline)</div>
+        <p style="color: red; font-size: 18px; font-weight: bold;">
+            Este párrafo tiene estilos aplicados directamente en la etiqueta HTML
+        </p>
+        <p style="background-color: yellow; padding: 10px;">
+            Otro ejemplo con fondo amarillo
+        </p>
+    </div>
+
+    <div class="ejemplo">
+        <div class="titulo-ejemplo">2. Hoja de estilo interna (en el head)</div>
+        <div class="estilo-interno">
+            Este div usa una clase definida en la sección &lt;style&gt; del head
+        </div>
+        <div class="estilo-interno">
+            Los estilos internos se aplican a toda la página
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <div class="titulo-ejemplo">3. Hoja de estilo externa (archivo .css)</div>
+        <div class="estilo-externo">
+            Este div usa una clase definida en un archivo CSS externo
+        </div>
+        <p class="texto-externo">
+            Los archivos CSS externos se pueden reutilizar en múltiples páginas
+        </p>
+    </div>
+
+    <div style="margin-top: 30px; padding: 15px; background-color: #f0f0f0; border-left: 4px solid #0066cc;">
+        <strong>Recomendación:</strong> Lo mejor es usar hojas de estilo externas porque:
+        <ul>
+            <li>Se pueden reutilizar en varias páginas</li>
+            <li>El código queda más limpio y organizado</li>
+            <li>Es más fácil de mantener</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prácticas CSS - Índice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitulo {
+            text-align: center;
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .grid-practicas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .tarjeta {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .numero {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .tarjeta h2 {
+            color: #2c3e50;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        .tarjeta p {
+            color: #7f8c8d;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .grid-practicas {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Prácticas de CSS</h1>
+        <p class="subtitulo">1º DAM - Lenguaje de Marcas</p>
+
+        <div class="grid-practicas">
+            <a href="01-formas-css.html" class="tarjeta">
+                <span class="numero">1</span>
+                <h2>Formas de Aplicar CSS</h2>
+                <p>Aprende las 3 formas de incluir CSS: en línea, interno y externo</p>
+            </a>
+
+            <a href="02-selectores.html" class="tarjeta">
+                <span class="numero">2</span>
+                <h2>Selectores CSS</h2>
+                <p>Tipos de selectores: etiqueta, id, clase, agrupamiento y elementos hijos</p>
+            </a>
+
+            <a href="03-unidades-medida.html" class="tarjeta">
+                <span class="numero">3</span>
+                <h2>Unidades de Medida</h2>
+                <p>Unidades absolutas (px, cm) y relativas (em, %, vh, vw)</p>
+            </a>
+
+            <a href="04-propiedades-texto.html" class="tarjeta">
+                <span class="numero">4</span>
+                <h2>Propiedades de Texto</h2>
+                <p>Color, alineación, decoración, transformación, espaciado y sombras</p>
+            </a>
+
+            <a href="05-propiedades-fuentes.html" class="tarjeta">
+                <span class="numero">5</span>
+                <h2>Fuentes y Google Fonts</h2>
+                <p>Familias de fuentes, tamaños, estilos y cómo usar Google Fonts</p>
+            </a>
+
+            <a href="06-propiedades-enlaces.html" class="tarjeta">
+                <span class="numero">6</span>
+                <h2>Propiedades de Enlaces</h2>
+                <p>Los 4 estados: link, visited, hover, active (orden LVHA)</p>
+            </a>
+
+            <a href="07-propiedades-bordes.html" class="tarjeta">
+                <span class="numero">7</span>
+                <h2>Propiedades de Bordes</h2>
+                <p>Estilos, grosores, colores y border-radius para esquinas redondeadas</p>
+            </a>
+
+            <a href="08-fontawesome-iconos.html" class="tarjeta">
+                <span class="numero">8</span>
+                <h2>FontAwesome - Iconos</h2>
+                <p>Cómo usar iconos como fuentes desde fontawesome.com</p>
+            </a>
+
+            <a href="09-tablas.html" class="tarjeta">
+                <span class="numero">9</span>
+                <h2>Propiedades de Tablas</h2>
+                <p>Bordes, collapse, hover y filas alternas con nth-child</p>
+            </a>
+
+            <a href="10-margenes-padding.html" class="tarjeta">
+                <span class="numero">10</span>
+                <h2>Márgenes y Padding</h2>
+                <p>Diferencias entre margin y padding, método abreviado y margin auto</p>
+            </a>
+
+            <a href="11-backgrounds.html" class="tarjeta">
+                <span class="numero">11</span>
+                <h2>Backgrounds</h2>
+                <p>Color, imágenes, repetición, posición, attachment y gradientes</p>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p><strong>Prácticas de CSS para 1º DAM</strong></p>
+            <p>Lenguaje de Marcas - SI01</p>
+            <p>Cada página incluye ejemplos visuales y código explicado</p>
+        </div>
+    </div>
+</body>
+</html>

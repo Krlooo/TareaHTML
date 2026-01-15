@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FontAwesome - Iconos como Fuentes</title>
+
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/your_code_here.js" crossorigin="anonymous"></script>
+    <!-- Alternativa: CDN público de FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="08-fontawesome-iconos.css">
+</head>
+<body>
+    <h1><i class="fas fa-icons"></i> FontAwesome - Iconos como Fuentes</h1>
+
+    <div class="ejemplo">
+        <h2>¿Qué es FontAwesome?</h2>
+        <p>FontAwesome es una librería de iconos que se pueden usar como fuentes en tu página web. Ventajas:</p>
+        <ul>
+            <li>Miles de iconos disponibles</li>
+            <li>Se pueden cambiar de tamaño fácilmente con CSS</li>
+            <li>Se pueden colorear como texto normal</li>
+            <li>Son escalables (vectoriales)</li>
+        </ul>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Cómo Incluir FontAwesome</h2>
+        <div class="pasos">
+            <div class="paso">
+                <strong>1. Registrarse en fontawesome.com</strong>
+                <p>Obtén un código kit personalizado</p>
+            </div>
+            <div class="paso">
+                <strong>2. Añadir el script en el head</strong>
+                <code>&lt;script src="https://kit.fontawesome.com/tu_codigo.js"&gt;&lt;/script&gt;</code>
+            </div>
+            <div class="paso">
+                <strong>3. Usar los iconos</strong>
+                <code>&lt;i class="fas fa-nombre-icono"&gt;&lt;/i&gt;</code>
+            </div>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Iconos Básicos</h2>
+        <div class="grid-iconos">
+            <div class="icono-item">
+                <i class="fas fa-home"></i>
+                <p>fa-home</p>
+            </div>
+            <div class="icono-item">
+                <i class="fas fa-user"></i>
+                <p>fa-user</p>
+            </div>
+            <div class="icono-item">
+                <i class="fas fa-envelope"></i>
+                <p>fa-envelope</p>
+            </div>
+            <div class="icono-item">
+                <i class="fas fa-phone"></i>
+                <p>fa-phone</p>
+            </div>
+            <div class="icono-item">
+                <i class="fas fa-heart"></i>
+                <p>fa-heart</p>
+            </div>
+            <div class="icono-item">
+                <i class="fas fa-star"></i>
+                <p>fa-star</p>
+            </div>
+            <div class="icono-item">
+                <i class="fas fa-search"></i>
+                <p>fa-search</p>
+            </div>
+            <div class="icono-item">
+                <i class="fas fa-shopping-cart"></i>
+                <p>fa-shopping-cart</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Cambiar Tamaño de Iconos</h2>
+        <div class="tamanios">
+            <i class="fas fa-coffee" style="font-size: 12px;"></i> 12px
+            <i class="fas fa-coffee" style="font-size: 20px;"></i> 20px
+            <i class="fas fa-coffee" style="font-size: 30px;"></i> 30px
+            <i class="fas fa-coffee" style="font-size: 50px;"></i> 50px
+            <i class="fas fa-coffee" style="font-size: 80px;"></i> 80px
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Cambiar Color de Iconos</h2>
+        <div class="colores">
+            <i class="fas fa-heart" style="color: red; font-size: 40px;"></i>
+            <i class="fas fa-star" style="color: gold; font-size: 40px;"></i>
+            <i class="fas fa-leaf" style="color: green; font-size: 40px;"></i>
+            <i class="fas fa-water" style="color: blue; font-size: 40px;"></i>
+            <i class="fas fa-fire" style="color: orange; font-size: 40px;"></i>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Iconos en Botones</h2>
+        <div class="botones">
+            <button class="btn btn-primary">
+                <i class="fas fa-download"></i> Descargar
+            </button>
+            <button class="btn btn-success">
+                <i class="fas fa-check"></i> Guardar
+            </button>
+            <button class="btn btn-danger">
+                <i class="fas fa-trash"></i> Eliminar
+            </button>
+            <button class="btn btn-info">
+                <i class="fas fa-info-circle"></i> Info
+            </button>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Iconos en Menú de Navegación</h2>
+        <nav class="menu-iconos">
+            <a href="#"><i class="fas fa-home"></i> Inicio</a>
+            <a href="#"><i class="fas fa-boxes"></i> Productos</a>
+            <a href="#"><i class="fas fa-shopping-bag"></i> Tienda</a>
+            <a href="#"><i class="fas fa-envelope"></i> Contacto</a>
+        </nav>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Iconos de Redes Sociales</h2>
+        <div class="redes-sociales">
+            <a href="#" class="social facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social linkedin">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social youtube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="social github">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Ejemplos Prácticos</h2>
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <i class="fas fa-code icono-grande"></i>
+                <h3>Desarrollo</h3>
+                <p>Creamos aplicaciones web modernas</p>
+            </div>
+            <div class="tarjeta">
+                <i class="fas fa-palette icono-grande"></i>
+                <h3>Diseño</h3>
+                <p>Interfaces atractivas y funcionales</p>
+            </div>
+            <div class="tarjeta">
+                <i class="fas fa-rocket icono-grande"></i>
+                <h3>Optimización</h3>
+                <p>Rendimiento y velocidad</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Nota Importante</h2>
+        <div class="alerta">
+            <i class="fas fa-exclamation-triangle"></i>
+            <strong>Recuerda:</strong> Para usar FontAwesome necesitas estar conectado a Internet (usando CDN) o descargar los archivos localmente.
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades de Tablas</title>
+    <link rel="stylesheet" href="09-tablas.css">
+</head>
+<body>
+    <h1>Propiedades de Tablas en CSS</h1>
+
+    <div class="ejemplo">
+        <h2>Tabla Básica con Bordes</h2>
+        <table class="tabla-basica">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>García</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>María</td>
+                <td>López</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>Martínez</td>
+                <td>28</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="ejemplo">
+        <h2>border-collapse: collapse</h2>
+        <p class="descripcion">Elimina el espacio entre bordes de celdas</p>
+        <table class="tabla-collapse">
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Stock</th>
+            </tr>
+            <tr>
+                <td>Laptop</td>
+                <td>$800</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Mouse</td>
+                <td>$20</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Teclado</td>
+                <td>$45</td>
+                <td>30</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Tabla con Ancho 100%</h2>
+        <table class="tabla-ancho-completo">
+            <tr>
+                <th>Ciudad</th>
+                <th>País</th>
+                <th>Población</th>
+            </tr>
+            <tr>
+                <td>Madrid</td>
+                <td>España</td>
+                <td>3.3M</td>
+            </tr>
+            <tr>
+                <td>Barcelona</td>
+                <td>España</td>
+                <td>1.6M</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Altura de Celdas (th, td height)</h2>
+        <table class="tabla-altura">
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+            </tr>
+            <tr>
+                <td>Celda con altura 50px</td>
+                <td>Otra celda</td>
+            </tr>
+            <tr>
+                <td>Más contenido</td>
+                <td>Datos aquí</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Alineación Vertical</h2>
+        <table class="tabla-alineacion">
+            <tr>
+                <th>Top</th>
+                <th>Middle</th>
+                <th>Bottom</th>
+            </tr>
+            <tr>
+                <td class="align-top">Alineado arriba<br>(vertical-align: top)</td>
+                <td class="align-middle">Alineado centro<br>(vertical-align: middle)</td>
+                <td class="align-bottom">Alineado abajo<br>(vertical-align: bottom)</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="ejemplo">
+        <h2>División Horizontal (border-bottom)</h2>
+        <table class="tabla-division">
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Ana García</td>
+                <td>ana@email.com</td>
+            </tr>
+            <tr>
+                <td>Luis Pérez</td>
+                <td>luis@email.com</td>
+            </tr>
+            <tr>
+                <td>Sara Ruiz</td>
+                <td>sara@email.com</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Tabla con Hover</h2>
+        <p class="descripcion">Pasa el ratón sobre las filas</p>
+        <table class="tabla-hover">
+            <tr>
+                <th>Curso</th>
+                <th>Profesor</th>
+                <th>Horario</th>
+            </tr>
+            <tr>
+                <td>Matemáticas</td>
+                <td>Prof. García</td>
+                <td>9:00-11:00</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>Prof. López</td>
+                <td>11:00-13:00</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>Prof. Martín</td>
+                <td>15:00-17:00</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Filas Pares e Impares (nth-child)</h2>
+        <p class="descripcion">Las filas pares tienen diferente color</p>
+        <table class="tabla-zebra">
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Estado</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Proyecto A</td>
+                <td>Completado</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Proyecto B</td>
+                <td>En Progreso</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Proyecto C</td>
+                <td>Pendiente</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Proyecto D</td>
+                <td>Completado</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Proyecto E</td>
+                <td>En Progreso</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Tabla Completa Estilizada</h2>
+        <p class="descripcion">Combinando todas las técnicas</p>
+        <table class="tabla-profesional">
+            <thead>
+                <tr>
+                    <th>Empleado</th>
+                    <th>Departamento</th>
+                    <th>Salario</th>
+                    <th>Inicio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td>IT</td>
+                    <td>$50,000</td>
+                    <td>2020-01-15</td>
+                </tr>
+                <tr>
+                    <td>María González</td>
+                    <td>Marketing</td>
+                    <td>$45,000</td>
+                    <td>2019-06-20</td>
+                </tr>
+                <tr>
+                    <td>Carlos López</td>
+                    <td>Ventas</td>
+                    <td>$48,000</td>
+                    <td>2021-03-10</td>
+                </tr>
+                <tr>
+                    <td>Ana Martínez</td>
+                    <td>RRHH</td>
+                    <td>$52,000</td>
+                    <td>2018-11-05</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Resumen de Propiedades</h2>
+        <table class="tabla-resumen">
+            <tr>
+                <th>Propiedad</th>
+                <th>Ejemplo</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>border</td>
+                <td>border: 1px solid black;</td>
+                <td>Añade bordes a las celdas</td>
+            </tr>
+            <tr>
+                <td>border-collapse</td>
+                <td>border-collapse: collapse;</td>
+                <td>Une los bordes de celdas adyacentes</td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td>width: 100%;</td>
+                <td>Ancho de la tabla</td>
+            </tr>
+            <tr>
+                <td>height</td>
+                <td>height: 50px;</td>
+                <td>Altura de celdas</td>
+            </tr>
+            <tr>
+                <td>vertical-align</td>
+                <td>vertical-align: bottom;</td>
+                <td>Alineación vertical del contenido</td>
+            </tr>
+            <tr>
+                <td>tr:hover</td>
+                <td>background-color: #f5f5f5;</td>
+                <td>Efecto al pasar el ratón</td>
+            </tr>
+            <tr>
+                <td>tr:nth-child(even)</td>
+                <td>background-color: #f2f2f2;</td>
+                <td>Estilo para filas pares</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

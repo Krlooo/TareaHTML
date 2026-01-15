@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.ejemplo {
+    background-color: white;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.ejemplo h2 {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Color del texto */
+.color-nombre {
+    color: red;
+    font-weight: bold;
+}
+
+.color-hex {
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.color-rgb {
+    color: rgb(255, 140, 0);
+    font-weight: bold;
+}
+
+/* Alineación */
+.align-left {
+    text-align: left;
+    background-color: #e8f5e9;
+    padding: 10px;
+}
+
+.align-center {
+    text-align: center;
+    background-color: #e3f2fd;
+    padding: 10px;
+}
+
+.align-right {
+    text-align: right;
+    background-color: #fff3e0;
+    padding: 10px;
+}
+
+.align-justify {
+    text-align: justify;
+    background-color: #f3e5f5;
+    padding: 10px;
+}
+
+/* Decoración */
+.deco-none {
+    text-decoration: none;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+.deco-underline {
+    text-decoration: underline;
+    background-color: #e8f5e9;
+    padding: 10px;
+}
+
+.deco-overline {
+    text-decoration: overline;
+    background-color: #e3f2fd;
+    padding: 10px;
+}
+
+.deco-line-through {
+    text-decoration: line-through;
+    background-color: #ffebee;
+    padding: 10px;
+}
+
+/* Transformación */
+.transform-uppercase {
+    text-transform: uppercase;
+    background-color: #fff9c4;
+    padding: 10px;
+}
+
+.transform-lowercase {
+    text-transform: lowercase;
+    background-color: #f3e5f5;
+    padding: 10px;
+}
+
+.transform-capitalize {
+    text-transform: capitalize;
+    background-color: #e0f2f1;
+    padding: 10px;
+}
+
+/* Sangría */
+.indent {
+    text-indent: 50px;
+    background-color: #fce4ec;
+    padding: 15px;
+    line-height: 1.6;
+}
+
+/* Espaciado entre letras */
+.spacing-normal {
+    letter-spacing: normal;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+.spacing-amplio {
+    letter-spacing: 3px;
+    background-color: #e8eaf6;
+    padding: 10px;
+}
+
+.spacing-compacto {
+    letter-spacing: -1px;
+    background-color: #fff8e1;
+    padding: 10px;
+}
+
+/* Altura de línea */
+.line-compacto {
+    line-height: 0.8;
+    background-color: #ffebee;
+    padding: 15px;
+}
+
+.line-normal {
+    line-height: 1.5;
+    background-color: #e8f5e9;
+    padding: 15px;
+}
+
+.line-amplio {
+    line-height: 2.5;
+    background-color: #e3f2fd;
+    padding: 15px;
+}
+
+/* Sombras de texto */
+.shadow-simple {
+    text-shadow: 3px 2px red;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.shadow-blur {
+    text-shadow: 2px 2px 5px gray;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.shadow-multiple {
+    text-shadow: 2px 2px 4px rgba(255,0,0,0.5),
+                 -2px -2px 4px rgba(0,0,255,0.5);
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}

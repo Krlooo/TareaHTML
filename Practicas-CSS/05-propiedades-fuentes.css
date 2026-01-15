@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    font-size: 16px; /* Tamaño base para cálculos con em */
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.ejemplo {
+    background-color: white;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.ejemplo h2 {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/* Familias de fuentes seguras */
+.arial {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #e8f5e9;
+}
+
+.times {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #e3f2fd;
+}
+
+.courier {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #fff3e0;
+}
+
+.verdana {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #f3e5f5;
+}
+
+/* Fuentes de Google */
+.google-roboto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    background-color: #e8f4f8;
+    border-left: 5px solid #2196f3;
+}
+
+.google-playfair {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    padding: 15px;
+    background-color: #fce4ec;
+    border-left: 5px solid #e91e63;
+}
+
+.google-lobster {
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+    padding: 15px;
+    background-color: #fff9c4;
+    border-left: 5px solid #fbc02d;
+}
+
+.google-courier {
+    font-family: 'Courier Prime', monospace;
+    font-size: 18px;
+    padding: 15px;
+    background-color: #e0f2f1;
+    border-left: 5px solid #009688;
+}
+
+/* Tamaños */
+.size-px {
+    font-size: 14px;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+.size-px-grande {
+    font-size: 24px;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+.size-em {
+    font-size: 1.5em; /* 1.5 * 16px = 24px */
+    background-color: #e8f5e9;
+    padding: 10px;
+}
+
+.size-em-grande {
+    font-size: 2em; /* 2 * 16px = 32px */
+    background-color: #e8f5e9;
+    padding: 10px;
+}
+
+/* Grosor */
+.weight-light {
+    font-weight: 300;
+    font-size: 18px;
+    background-color: #f3e5f5;
+    padding: 10px;
+}
+
+.weight-normal {
+    font-weight: normal; /* o 400 */
+    font-size: 18px;
+    background-color: #e3f2fd;
+    padding: 10px;
+}
+
+.weight-bold {
+    font-weight: bold; /* o 700 */
+    font-size: 18px;
+    background-color: #ffebee;
+    padding: 10px;
+}
+
+/* Estilo */
+.style-normal {
+    font-style: normal;
+    font-size: 18px;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+.style-italic {
+    font-style: italic;
+    font-size: 18px;
+    background-color: #fff3e0;
+    padding: 10px;
+}
+
+/* Método abreviado */
+.font-abreviado {
+    font: italic bold 18px/1.5 Georgia, serif;
+    /* style weight size/line-height family */
+    background-color: #e8f5e9;
+    padding: 15px;
+    border: 2px dashed #4caf50;
+}
+
+/* Cajas de información */
+.info {
+    background-color: #fff9c4;
+    padding: 15px;
+    border-left: 5px solid #fbc02d;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.codigo {
+    background-color: #263238;
+    color: #aed581;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-family: 'Courier New', monospace;
+}
+
+/* Tabla comparativa */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+tr:nth-child(even) {
+    background-color: #fafafa;
+}

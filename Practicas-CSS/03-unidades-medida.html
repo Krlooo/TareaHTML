@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de Medida CSS</title>
+    <link rel="stylesheet" href="03-unidades-medida.css">
+</head>
+<body>
+    <h1>Unidades de Medida en CSS</h1>
+
+    <div class="seccion">
+        <h2>Unidades Absolutas</h2>
+        <p class="descripcion">Son fijas, siempre miden lo mismo</p>
+
+        <div class="caja px">
+            200px de ancho<br>
+            (píxeles)
+        </div>
+
+        <div class="caja cm">
+            5cm de ancho<br>
+            (centímetros)
+        </div>
+
+        <div class="caja pt">
+            150pt de ancho<br>
+            (puntos)
+        </div>
+    </div>
+
+    <div class="seccion">
+        <h2>Unidades Relativas</h2>
+        <p class="descripcion">Cambian según el contexto</p>
+
+        <div class="padre">
+            <p>Elemento padre (font-size: 20px)</p>
+            <div class="hijo-em">
+                1em = tamaño del padre (20px)
+            </div>
+            <div class="hijo-em2">
+                2em = el doble del padre (40px)
+            </div>
+        </div>
+
+        <div class="porcentajes">
+            <div class="hijo-50">
+                Ancho: 50% del padre
+            </div>
+            <div class="hijo-75">
+                Ancho: 75% del padre
+            </div>
+        </div>
+    </div>
+
+    <div class="seccion">
+        <h2>Unidades del Viewport</h2>
+        <p class="descripcion">Relativas al tamaño de la ventana del navegador</p>
+
+        <div class="caja-vw">
+            50vw = 50% del ancho de la ventana
+        </div>
+
+        <div class="caja-vh">
+            30vh = 30% del alto de la ventana
+        </div>
+
+        <p class="info">
+            <strong>Prueba:</strong> Cambia el tamaño de tu navegador y verás cómo estas cajas se adaptan
+        </p>
+    </div>
+
+    <div class="seccion">
+        <h2>Comparación de Unidades</h2>
+        <table>
+            <tr>
+                <th>Unidad</th>
+                <th>Tipo</th>
+                <th>Uso Recomendado</th>
+            </tr>
+            <tr>
+                <td>px</td>
+                <td>Absoluta</td>
+                <td>Bordes, elementos fijos</td>
+            </tr>
+            <tr>
+                <td>em</td>
+                <td>Relativa</td>
+                <td>Espaciados, fuentes</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Relativa</td>
+                <td>Anchos, layouts responsive</td>
+            </tr>
+            <tr>
+                <td>vw/vh</td>
+                <td>Relativa viewport</td>
+                <td>Secciones a pantalla completa</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades de Fuentes</title>
+
+    <!-- Importar fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&family=Courier+Prime&family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="05-propiedades-fuentes.css">
+</head>
+<body>
+    <h1>Propiedades de Fuentes en CSS</h1>
+
+    <div class="ejemplo">
+        <h2>font-family (Familias de Fuentes)</h2>
+
+        <p class="arial">
+            Esta fuente es Arial (sans-serif)
+        </p>
+
+        <p class="times">
+            Esta fuente es Times New Roman (serif)
+        </p>
+
+        <p class="courier">
+            Esta fuente es Courier (monospace)
+        </p>
+
+        <p class="verdana">
+            Esta fuente es Verdana con fallbacks: Arial, Helvetica, sans-serif
+        </p>
+
+        <div class="info">
+            <strong>Fallbacks:</strong> Se recomienda poner al final la familia genérica de la fuente por si no se encuentra la principal.
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Google Fonts</h2>
+        <p class="descripcion">Fuentes importadas desde fonts.google.com</p>
+
+        <p class="google-roboto">
+            Fuente Roboto de Google Fonts - moderna y legible
+        </p>
+
+        <p class="google-playfair">
+            Fuente Playfair Display - elegante para títulos
+        </p>
+
+        <p class="google-lobster">
+            Fuente Lobster - decorativa y divertida
+        </p>
+
+        <p class="google-courier">
+            Fuente Courier Prime - monoespaciada de Google
+        </p>
+
+        <div class="info">
+            <strong>Ventaja:</strong> Las fuentes de Google se descargan automáticamente, funcionan aunque el usuario no las tenga instaladas.
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>font-size (Tamaño)</h2>
+
+        <p class="size-px">Tamaño 14px (píxeles)</p>
+        <p class="size-px-grande">Tamaño 24px</p>
+        <p class="size-em">Tamaño 1.5em (1.5 veces el tamaño base)</p>
+        <p class="size-em-grande">Tamaño 2em (el doble)</p>
+
+        <div class="info">
+            <strong>W3C recomienda:</strong> Usar unidades relativas como "em" en lugar de píxeles para mejor accesibilidad.
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>font-weight (Grosor)</h2>
+
+        <p class="weight-light">Texto ligero (300)</p>
+        <p class="weight-normal">Texto normal (400 o normal)</p>
+        <p class="weight-bold">Texto en negrita (700 o bold)</p>
+    </div>
+
+    <div class="ejemplo">
+        <h2>font-style (Estilo)</h2>
+
+        <p class="style-normal">Texto normal (font-style: normal)</p>
+        <p class="style-italic">Texto en cursiva (font-style: italic)</p>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Método Abreviado (font)</h2>
+        <p class="descripcion">Se puede combinar todo en una sola línea</p>
+
+        <p class="font-abreviado">
+            font: italic bold 18px/1.5 Georgia, serif;
+        </p>
+
+        <div class="codigo">
+            <code>
+                font: [style] [weight] [size]/[line-height] [family];
+            </code>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Comparación de Fuentes Seguras</h2>
+        <table>
+            <tr>
+                <th>Fuente</th>
+                <th>Tipo</th>
+                <th>Ejemplo</th>
+            </tr>
+            <tr>
+                <td>Arial</td>
+                <td>Sans-serif</td>
+                <td style="font-family: Arial;">The quick brown fox</td>
+            </tr>
+            <tr>
+                <td>Verdana</td>
+                <td>Sans-serif</td>
+                <td style="font-family: Verdana;">The quick brown fox</td>
+            </tr>
+            <tr>
+                <td>Times New Roman</td>
+                <td>Serif</td>
+                <td style="font-family: 'Times New Roman';">The quick brown fox</td>
+            </tr>
+            <tr>
+                <td>Georgia</td>
+                <td>Serif</td>
+                <td style="font-family: Georgia;">The quick brown fox</td>
+            </tr>
+            <tr>
+                <td>Courier New</td>
+                <td>Monospace</td>
+                <td style="font-family: 'Courier New';">The quick brown fox</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

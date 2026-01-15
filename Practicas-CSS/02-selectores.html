@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores CSS</title>
+    <link rel="stylesheet" href="02-selectores.css">
+</head>
+<body>
+    <h1>Tipos de Selectores en CSS</h1>
+
+    <div class="contenedor">
+        <h2>1. Selector de Etiqueta</h2>
+        <p>Todos los párrafos tienen el mismo estilo base.</p>
+        <p>Este párrafo también se ve afectado por el selector de etiqueta.</p>
+    </div>
+
+    <div class="contenedor">
+        <h2>2. Selector por ID (#)</h2>
+        <div id="unico">
+            Este div tiene un ID único. Los IDs solo se usan una vez por página.
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <h2>3. Selector por Clase (.)</h2>
+        <p class="importante">Este párrafo usa la clase "importante"</p>
+        <p class="destacado">Este usa la clase "destacado"</p>
+        <p class="importante destacado">Este usa ambas clases a la vez</p>
+    </div>
+
+    <div class="contenedor">
+        <h2>4. Agrupamiento de Selectores</h2>
+        <h3>Subtítulo h3</h3>
+        <h4>Subtítulo h4</h4>
+        <h5>Subtítulo h5</h5>
+        <p>Todos los títulos h3, h4 y h5 tienen el mismo color</p>
+    </div>
+
+    <div class="contenedor">
+        <h2>5. Selectores de Elementos Hijos</h2>
+        <p>Este párrafo contiene un <a href="#">enlace dentro</a> que tiene estilos especiales.</p>
+        <a href="#">Este enlace no está dentro de un párrafo</a>
+        <div class="caja">
+            <p>Párrafo dentro de .caja con un <a href="#">enlace especial</a></p>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <h2>6. Combinación de Selectores</h2>
+        <div class="tarjeta info">
+            Esta tarjeta combina las clases "tarjeta" e "info"
+        </div>
+        <div class="tarjeta alerta">
+            Esta tarjeta combina las clases "tarjeta" y "alerta"
+        </div>
+    </div>
+</body>
+</html>

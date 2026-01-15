@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades de Backgrounds</title>
+    <link rel="stylesheet" href="11-backgrounds.css">
+</head>
+<body>
+    <h1>Propiedades de Backgrounds (Fondos) en CSS</h1>
+
+    <div class="ejemplo">
+        <h2>background-color (Color de Fondo)</h2>
+        <div class="grid-colores">
+            <div class="caja-color bg-lightblue">
+                lightblue
+            </div>
+            <div class="caja-color bg-salmon">
+                salmon
+            </div>
+            <div class="caja-color bg-lightgreen">
+                lightgreen
+            </div>
+            <div class="caja-color bg-hex">
+                #ff6b6b
+            </div>
+            <div class="caja-color bg-rgb">
+                rgb(100, 149, 237)
+            </div>
+            <div class="caja-color bg-rgba">
+                rgba(255, 99, 71, 0.5)
+            </div>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>background-image (Imagen de Fondo)</h2>
+        <p class="descripcion">Usa url() para especificar la ruta de la imagen</p>
+        <div class="bg-imagen">
+            <p class="texto-sobre-imagen">background-image: url("imagen.jpg")</p>
+        </div>
+        <div class="codigo">
+            <code>background-image: url("paper.gif");</code>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>background-repeat (Repetición de Imagen)</h2>
+        <div class="grid-repeat">
+            <div class="col-repeat">
+                <h3>repeat (por defecto)</h3>
+                <div class="caja-repeat bg-repeat-default">
+                    Se repite en ambas direcciones
+                </div>
+            </div>
+
+            <div class="col-repeat">
+                <h3>repeat-x (horizontal)</h3>
+                <div class="caja-repeat bg-repeat-x">
+                    Solo horizontal
+                </div>
+            </div>
+
+            <div class="col-repeat">
+                <h3>repeat-y (vertical)</h3>
+                <div class="caja-repeat bg-repeat-y">
+                    Solo vertical
+                </div>
+            </div>
+
+            <div class="col-repeat">
+                <h3>no-repeat</h3>
+                <div class="caja-repeat bg-no-repeat">
+                    No se repite
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>background-position (Posición de Imagen)</h2>
+        <div class="grid-position">
+            <div class="caja-position bg-pos-center">
+                center
+            </div>
+            <div class="caja-position bg-pos-top-left">
+                left top
+            </div>
+            <div class="caja-position bg-pos-top-right">
+                right top
+            </div>
+            <div class="caja-position bg-pos-bottom">
+                center bottom
+            </div>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>background-attachment (Adjuntar Fondo)</h2>
+        <p class="descripcion">Controla si la imagen se mueve con el scroll</p>
+
+        <div class="demo-attachment">
+            <h3>scroll (por defecto)</h3>
+            <div class="caja-attachment bg-attach-scroll">
+                <p>La imagen se mueve con el scroll</p>
+                <p>Contenido...</p>
+                <p>Más contenido...</p>
+            </div>
+
+            <h3>fixed</h3>
+            <div class="caja-attachment bg-attach-fixed">
+                <p>La imagen permanece fija mientras haces scroll</p>
+                <p>Contenido...</p>
+                <p>Más contenido...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>background-size (Tamaño de Imagen)</h2>
+        <div class="grid-size">
+            <div class="col-size">
+                <h3>auto (original)</h3>
+                <div class="caja-size bg-size-auto">
+                    Tamaño original
+                </div>
+            </div>
+
+            <div class="col-size">
+                <h3>cover</h3>
+                <div class="caja-size bg-size-cover">
+                    Cubre todo el espacio
+                </div>
+            </div>
+
+            <div class="col-size">
+                <h3>contain</h3>
+                <div class="caja-size bg-size-contain">
+                    Se ajusta completa
+                </div>
+            </div>
+
+            <div class="col-size">
+                <h3>Tamaño fijo</h3>
+                <div class="caja-size bg-size-fixed">
+                    100px 100px
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Gradientes (Sin imagen)</h2>
+        <div class="grid-gradientes">
+            <div class="caja-gradiente grad-linear">
+                Linear Gradient
+            </div>
+            <div class="caja-gradiente grad-radial">
+                Radial Gradient
+            </div>
+            <div class="caja-gradiente grad-multiple">
+                Múltiples Colores
+            </div>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Múltiples Fondos</h2>
+        <p class="descripcion">Se pueden combinar varios fondos separándolos por comas</p>
+        <div class="bg-multiple">
+            Fondo con múltiples capas
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Ejemplos Prácticos</h2>
+
+        <div class="tarjeta-hero">
+            <h3>Sección Hero con Fondo</h3>
+            <p>Esta es una típica sección hero con imagen de fondo</p>
+            <button class="btn-hero">Comenzar</button>
+        </div>
+
+        <div class="tarjeta-overlay">
+            <h3>Fondo con Overlay</h3>
+            <p>La imagen tiene una capa oscura encima para mejor legibilidad del texto</p>
+        </div>
+
+        <div class="tarjeta-patron">
+            <h3>Fondo con Patrón</h3>
+            <p>Usando una imagen pequeña que se repite como patrón</p>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Tabla de Propiedades</h2>
+        <table class="tabla-bg">
+            <tr>
+                <th>Propiedad</th>
+                <th>Valores</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>background-color</td>
+                <td>color, hex, rgb, rgba</td>
+                <td>Color de fondo</td>
+            </tr>
+            <tr>
+                <td>background-image</td>
+                <td>url("ruta")</td>
+                <td>Imagen de fondo</td>
+            </tr>
+            <tr>
+                <td>background-repeat</td>
+                <td>repeat, no-repeat, repeat-x, repeat-y</td>
+                <td>Cómo se repite la imagen</td>
+            </tr>
+            <tr>
+                <td>background-position</td>
+                <td>left, center, right, top, bottom</td>
+                <td>Posición de la imagen</td>
+            </tr>
+            <tr>
+                <td>background-attachment</td>
+                <td>scroll, fixed</td>
+                <td>Si se mueve con el scroll</td>
+            </tr>
+            <tr>
+                <td>background-size</td>
+                <td>auto, cover, contain, 300px</td>
+                <td>Tamaño de la imagen</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Nota sobre Imágenes</h2>
+        <div class="nota-imagen">
+            <strong>Nota:</strong> En esta práctica se usan gradientes y colores porque no tenemos imágenes.
+            En un proyecto real, usarías <code>url("ruta/a/tu/imagen.jpg")</code> para añadir imágenes de fondo.
+        </div>
+    </div>
+</body>
+</html>

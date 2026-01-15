@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades de Bordes</title>
+    <link rel="stylesheet" href="07-propiedades-bordes.css">
+</head>
+<body>
+    <h1>Propiedades de Bordes en CSS</h1>
+
+    <div class="ejemplo">
+        <h2>border-style (Estilos de Borde)</h2>
+        <div class="grid-bordes">
+            <div class="caja borde-solid">solid</div>
+            <div class="caja borde-dashed">dashed</div>
+            <div class="caja borde-dotted">dotted</div>
+            <div class="caja borde-double">double</div>
+            <div class="caja borde-groove">groove</div>
+            <div class="caja borde-ridge">ridge</div>
+            <div class="caja borde-inset">inset</div>
+            <div class="caja borde-outset">outset</div>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>border-width (Grosor del Borde)</h2>
+        <div class="grid-bordes">
+            <div class="caja width-1">1px</div>
+            <div class="caja width-3">3px</div>
+            <div class="caja width-5">5px</div>
+            <div class="caja width-10">10px</div>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>border-color (Color del Borde)</h2>
+        <div class="grid-bordes">
+            <div class="caja color-red">red</div>
+            <div class="caja color-blue">blue</div>
+            <div class="caja color-green">green</div>
+            <div class="caja color-hex">#ff6b6b</div>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Bordes Individuales por Lado</h2>
+        <div class="grid-bordes-lados">
+            <div class="caja lado-top">
+                border-top
+            </div>
+            <div class="caja lado-right">
+                border-right
+            </div>
+            <div class="caja lado-bottom">
+                border-bottom
+            </div>
+            <div class="caja lado-left">
+                border-left
+            </div>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Bordes con 4 Valores (sentido del reloj)</h2>
+        <p class="descripcion">Los valores se aplican en orden: top - right - bottom - left</p>
+
+        <div class="caja borde-4-valores">
+            border-style: dotted solid double dashed;
+        </div>
+
+        <div class="caja borde-4-width">
+            border-width: 2px 10px 4px 20px;
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Bordes con 2 Valores</h2>
+        <p class="descripcion">Primer valor: arriba y abajo | Segundo valor: izquierda y derecha</p>
+
+        <div class="caja borde-2-valores">
+            border-style: dotted solid;
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Método Abreviado</h2>
+        <p class="descripcion">border: width style color</p>
+
+        <div class="caja abreviado-1">
+            border: 5px solid red;
+        </div>
+
+        <div class="caja abreviado-2">
+            border: 3px dashed #3498db;
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Bordes Redondeados (border-radius)</h2>
+        <div class="grid-bordes">
+            <div class="caja redondeado-5">
+                border-radius: 5px;
+            </div>
+            <div class="caja redondeado-15">
+                border-radius: 15px;
+            </div>
+            <div class="caja redondeado-25">
+                border-radius: 25px;
+            </div>
+            <div class="caja redondeado-50">
+                border-radius: 50%;
+            </div>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Bordes Redondeados por Esquina</h2>
+        <div class="grid-bordes">
+            <div class="caja esquina-tl">
+                top-left
+            </div>
+            <div class="caja esquina-tr">
+                top-right
+            </div>
+            <div class="caja esquina-bl">
+                bottom-left
+            </div>
+            <div class="caja esquina-br">
+                bottom-right
+            </div>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Ejemplos Prácticos</h2>
+        <div class="grid-ejemplos">
+            <div class="tarjeta">
+                <h3>Tarjeta Básica</h3>
+                <p>Con borde y esquinas redondeadas</p>
+            </div>
+
+            <div class="alerta">
+                <strong>¡Alerta!</strong> Mensaje importante
+            </div>
+
+            <div class="nota">
+                <strong>Nota:</strong> Borde lateral destacado
+            </div>
+
+            <div class="boton">
+                Botón con Borde
+            </div>
+        </div>
+    </div>
+</body>
+</html>

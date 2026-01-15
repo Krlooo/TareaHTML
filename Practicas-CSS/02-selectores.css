@@ -1,0 +1,112 @@
+/* Estilos para la página de selectores */
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* 1. Selector de etiqueta */
+p {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* 2. Selector por ID */
+#unico {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* 3. Selectores por clase */
+.importante {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.destacado {
+    background-color: #f39c12;
+    padding: 10px;
+    border-left: 5px solid #d68910;
+}
+
+/* Cuando tiene ambas clases */
+.importante.destacado {
+    color: white;
+}
+
+/* 4. Agrupamiento de selectores */
+h3, h4, h5 {
+    color: #27ae60;
+}
+
+/* 5. Elementos hijos - enlaces dentro de párrafos */
+p a {
+    background-color: #ffe5e5;
+    padding: 2px 5px;
+    text-decoration: none;
+    color: #c0392b;
+    border-radius: 3px;
+}
+
+p a:hover {
+    background-color: #ffcccc;
+}
+
+/* Enlaces dentro de .caja */
+.caja a {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+/* 6. Combinaciones */
+.tarjeta {
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+.tarjeta.info {
+    background-color: #e3f2fd;
+    border-color: #2196f3;
+}
+
+.tarjeta.alerta {
+    background-color: #ffebee;
+    border-color: #f44336;
+}
+
+/* Contenedores generales */
+.contenedor {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contenedor h2 {
+    color: #34495e;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.caja {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px dashed #999;
+}

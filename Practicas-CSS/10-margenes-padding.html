@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Márgenes y Padding</title>
+    <link rel="stylesheet" href="10-margenes-padding.css">
+</head>
+<body>
+    <h1>Márgenes (margin) y Relleno (padding)</h1>
+
+    <div class="ejemplo">
+        <h2>Diferencia entre Margin y Padding</h2>
+        <div class="visual-box">
+            <div class="box-model">
+                <div class="margin-layer">
+                    MARGIN (espacio exterior)
+                    <div class="border-layer">
+                        BORDER (borde)
+                        <div class="padding-layer">
+                            PADDING (espacio interior)
+                            <div class="content-layer">
+                                CONTENT (contenido)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="nota">
+            <strong>Margin:</strong> Espacio FUERA del elemento (entre elementos)<br>
+            <strong>Padding:</strong> Espacio DENTRO del elemento (entre el borde y el contenido)
+        </p>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Propiedades de Margin</h2>
+        <div class="demo-margin">
+            <div class="caja margin-top">margin-top: 50px</div>
+            <div class="caja margin-bottom">margin-bottom: 30px</div>
+            <div class="caja margin-right">margin-right: 80px</div>
+            <div class="caja margin-left">margin-left: 60px</div>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Margin con Método Abreviado</h2>
+        <div class="codigo">
+            <code>/* 4 valores: top right bottom left (sentido del reloj) */</code>
+            <code>margin: 25px 50px 75px 100px;</code>
+        </div>
+        <div class="caja margin-4-valores">
+            margin: 25px 50px 75px 100px
+        </div>
+
+        <div class="codigo">
+            <code>/* 2 valores: vertical horizontal */</code>
+            <code>margin: 20px 60px;</code>
+        </div>
+        <div class="caja margin-2-valores">
+            margin: 20px 60px (vertical | horizontal)
+        </div>
+
+        <div class="codigo">
+            <code>/* 1 valor: todos los lados iguales */</code>
+            <code>margin: 30px;</code>
+        </div>
+        <div class="caja margin-1-valor">
+            margin: 30px
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Margin Auto (Centrar Horizontalmente)</h2>
+        <p class="descripcion">Para centrar un elemento horizontalmente en su contenedor</p>
+        <div class="caja margin-auto">
+            margin: auto;<br>
+            width: 300px;<br>
+            ¡Estoy centrado!
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Propiedades de Padding</h2>
+        <div class="demo-padding">
+            <div class="caja-padding padding-top">padding-top: 30px</div>
+            <div class="caja-padding padding-right">padding-right: 40px</div>
+            <div class="caja-padding padding-bottom">padding-bottom: 25px</div>
+            <div class="caja-padding padding-left">padding-left: 50px</div>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Padding con Método Abreviado</h2>
+        <div class="codigo">
+            <code>/* 4 valores: top right bottom left */</code>
+            <code>padding: 10px 20px 30px 40px;</code>
+        </div>
+        <div class="caja-padding padding-4-valores">
+            padding: 10px 20px 30px 40px
+        </div>
+
+        <div class="codigo">
+            <code>/* 1 valor: todos los lados iguales */</code>
+            <code>padding: 25px;</code>
+        </div>
+        <div class="caja-padding padding-1-valor">
+            padding: 25px en todos los lados
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Comparación Visual</h2>
+        <div class="comparacion">
+            <div class="col">
+                <h3>Sin Margin ni Padding</h3>
+                <div class="caja-comp sin-espacios">
+                    Contenido pegado
+                </div>
+            </div>
+
+            <div class="col">
+                <h3>Solo Margin</h3>
+                <div class="caja-comp solo-margin">
+                    Con margin 20px
+                </div>
+            </div>
+
+            <div class="col">
+                <h3>Solo Padding</h3>
+                <div class="caja-comp solo-padding">
+                    Con padding 20px
+                </div>
+            </div>
+
+            <div class="col">
+                <h3>Margin + Padding</h3>
+                <div class="caja-comp ambos">
+                    margin: 20px<br>
+                    padding: 20px
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Width y Height NO incluyen Padding ni Margin</h2>
+        <div class="info-importante">
+            <strong>¡IMPORTANTE!</strong> Las propiedades width y height NO incluyen padding, bordes o márgenes.
+            Solo establecen el tamaño del área de contenido.
+        </div>
+
+        <div class="demo-width">
+            <div class="caja-width-demo">
+                width: 200px;<br>
+                padding: 20px;<br>
+                border: 5px;<br>
+                <br>
+                Ancho total = 200 + 40 + 10 = 250px
+            </div>
+        </div>
+
+        <p class="nota">
+            El ancho total ocupado será: width + padding-left + padding-right + border-left + border-right
+        </p>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Ejemplos Prácticos</h2>
+
+        <h3>Tarjeta con Espaciado</h3>
+        <div class="tarjeta-practica">
+            <h4>Título de la Tarjeta</h4>
+            <p>Esta tarjeta usa padding para el espacio interno y margin para separarse de otros elementos.</p>
+            <button class="boton-tarjeta">Acción</button>
+        </div>
+
+        <h3>Botones con Padding</h3>
+        <div class="grupo-botones">
+            <button class="btn-practica btn-sm">Pequeño</button>
+            <button class="btn-practica btn-md">Mediano</button>
+            <button class="btn-practica btn-lg">Grande</button>
+        </div>
+
+        <h3>Texto con Espaciado</h3>
+        <div class="texto-espaciado">
+            <p>Este párrafo tiene padding interior para que el texto no toque los bordes.</p>
+        </div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Tabla de Referencia Rápida</h2>
+        <table class="tabla-referencia">
+            <tr>
+                <th>Propiedad</th>
+                <th>Qué hace</th>
+                <th>Ejemplo</th>
+            </tr>
+            <tr>
+                <td>margin</td>
+                <td>Espacio exterior (entre elementos)</td>
+                <td>margin: 20px;</td>
+            </tr>
+            <tr>
+                <td>margin-top</td>
+                <td>Margen superior</td>
+                <td>margin-top: 10px;</td>
+            </tr>
+            <tr>
+                <td>margin: auto</td>
+                <td>Centra el elemento horizontalmente</td>
+                <td>margin: auto;</td>
+            </tr>
+            <tr>
+                <td>padding</td>
+                <td>Espacio interior (dentro del borde)</td>
+                <td>padding: 15px;</td>
+            </tr>
+            <tr>
+                <td>padding-left</td>
+                <td>Relleno izquierdo</td>
+                <td>padding-left: 25px;</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
