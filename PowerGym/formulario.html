@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Información</title>
+    <style>
+        body {
+            background-color: AntiqueWhite;
+        }
+
+        h1 {
+            font-family: Arial;
+            font-size: 25px;
+            color: brown;
+        }
+
+        label {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Información</h1>
+
+    <form action="formulario.php" method="POST">
+        <label for="nombreyapellidos">Nombre y apellidos:</label><br>
+        <input type="text" id="nombreyapellidos" name="nombreyapellidos" maxlength="50"><br><br>
+
+        <label for="contrasena">Contraseña:</label><br>
+        <input type="password" id="contrasena" name="contrasena" maxlength="8"><br><br>
+
+        <label for="usuario">Usuario:</label><br>
+        <input type="text" id="usuario" name="usuario" value="anónimo" disabled><br><br>
+
+        <label for="nivel">Nivel:</label><br>
+        <select id="nivel" name="nivel">
+            <option value="principiante">Principiante</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="avanzado" selected>Avanzado</option>
+        </select><br><br>
+
+        <input type="checkbox" id="deseo" name="deseo" checked>
+        <label for="deseo">Deseo recibir información comercial</label><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
