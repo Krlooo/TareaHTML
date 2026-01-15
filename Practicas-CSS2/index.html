@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prácticas CSS 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin: 30px 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .card a {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .card a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>Prácticas de CSS 2</h1>
+
+    <div class="container">
+        <div class="card">
+            <h2>01 - Modelo de Cajas</h2>
+            <p>box-sizing: content-box vs border-box</p>
+            <a href="01-modelo-cajas.html">Ver práctica</a>
+        </div>
+
+        <div class="card">
+            <h2>02 - Float y Clear</h2>
+            <p>Elementos flotantes y limpieza de floats</p>
+            <a href="02-float-clear.html">Ver práctica</a>
+        </div>
+
+        <div class="card">
+            <h2>03 - Position</h2>
+            <p>static, relative, absolute, fixed, sticky</p>
+            <a href="03-position.html">Ver práctica</a>
+        </div>
+
+        <div class="card">
+            <h2>04 - Display y Visibility</h2>
+            <p>block, inline, none, visibility hidden</p>
+            <a href="04-display-visibility.html">Ver práctica</a>
+        </div>
+
+        <div class="card">
+            <h2>05 - Inline-block</h2>
+            <p>Display inline-block para menús horizontales</p>
+            <a href="05-inline-block.html">Ver práctica</a>
+        </div>
+
+        <div class="card">
+            <h2>06 - Etiquetas Semánticas</h2>
+            <p>header, footer, main, aside, section, article, nav, figure</p>
+            <a href="06-etiquetas-semanticas.html">Ver práctica</a>
+        </div>
+
+        <div class="card">
+            <h2>07 - Flexbox</h2>
+            <p>justify-content, align-items, flex-wrap</p>
+            <a href="07-flexbox.html">Ver práctica</a>
+        </div>
+
+        <div class="card">
+            <h2>08 - Overflow</h2>
+            <p>visible, hidden, scroll, auto</p>
+            <a href="08-overflow.html">Ver práctica</a>
+        </div>
+
+        <div class="card">
+            <h2>09 - Cursor</h2>
+            <p>Diferentes tipos de punteros del ratón</p>
+            <a href="09-cursor.html">Ver práctica</a>
+        </div>
+
+        <div class="card">
+            <h2>10 - Transiciones</h2>
+            <p>transition-property, transition-duration</p>
+            <a href="10-transiciones.html">Ver práctica</a>
+        </div>
+
+        <div class="card">
+            <h2>11 - Sombras</h2>
+            <p>text-shadow y box-shadow</p>
+            <a href="11-sombras.html">Ver práctica</a>
+        </div>
+
+        <div class="card">
+            <h2>12 - Opacidad</h2>
+            <p>Propiedad opacity y efectos hover</p>
+            <a href="12-opacidad.html">Ver práctica</a>
+        </div>
+    </div>
+</body>
+</html>

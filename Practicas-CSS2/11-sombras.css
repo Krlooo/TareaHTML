@@ -1,0 +1,76 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #666;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.texto-sombra1 {
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.texto-sombra2 {
+    font-size: 30px;
+    color: #333;
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.texto-sombra3 {
+    font-size: 35px;
+    color: #ff6b6b;
+    text-shadow: 2px 2px 0px #333, 4px 4px 0px #666;
+    text-align: center;
+}
+
+.caja {
+    background-color: white;
+    padding: 30px;
+    margin: 20px auto;
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.caja-sombra1 {
+    box-shadow: 10px 10px 5px grey;
+}
+
+.caja-sombra2 {
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
+
+.caja-sombra3 {
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.5);
+    background-color: lightblue;
+}
+
+.caja-sombra4 {
+    box-shadow: 3px 3px 5px red, -3px -3px 5px blue;
+}
+
+.caja-hover {
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.caja-hover:hover {
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.5);
+}

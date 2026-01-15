@@ -1,0 +1,98 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #666;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+section {
+    display: flex;
+    background-color: lightblue;
+    border: 2px solid blue;
+    padding: 10px;
+    margin-bottom: 20px;
+    min-height: 100px;
+}
+
+article {
+    border: 2px solid green;
+    background-color: lightcoral;
+    padding: 15px;
+    margin: 5px;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-start {
+    justify-content: center;
+    align-items: flex-start;
+    height: 150px;
+}
+
+.align-center {
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.align-end {
+    justify-content: center;
+    align-items: flex-end;
+    height: 150px;
+}
+
+.align-self-example {
+    justify-content: space-around;
+    height: 150px;
+}
+
+.self-start {
+    align-self: flex-start;
+}
+
+.self-center {
+    align-self: center;
+}
+
+.self-end {
+    align-self: flex-end;
+}
+
+.wrap {
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+.centrar {
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}

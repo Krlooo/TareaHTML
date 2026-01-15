@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de cajas</title>
+    <link rel="stylesheet" href="01-modelo-cajas.css">
+</head>
+<body>
+    <h1>Modelo de Cajas - box-sizing</h1>
+
+    <h2>Con content-box (por defecto)</h2>
+    <div class="caja-content">
+        Esta caja tiene width: 200px, padding: 20px y border: 5px
+        <br>Tamaño total = 200 + 40 + 10 = 250px
+    </div>
+
+    <h2>Con border-box</h2>
+    <div class="caja-border">
+        Esta caja tiene width: 200px, padding: 20px y border: 5px
+        <br>Tamaño total = 200px (incluye padding y border)
+    </div>
+
+    <p>Con border-box es mas facil calcular tamaños</p>
+</body>
+</html>

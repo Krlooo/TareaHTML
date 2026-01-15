@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="03-position.css">
+</head>
+<body>
+    <h1>Propiedad Position</h1>
+
+    <h2>Static (por defecto)</h2>
+    <div class="contenedor">
+        <div class="caja static">Static</div>
+        <p>Posicionamiento normal</p>
+    </div>
+
+    <h2>Relative</h2>
+    <div class="contenedor">
+        <div class="caja relative">Relative<br>top: 20px<br>left: 30px</div>
+        <p>Se mueve desde su posicion original pero reserva el espacio</p>
+    </div>
+
+    <h2>Absolute</h2>
+    <div class="contenedor-relative">
+        <div class="caja absolute">Absolute<br>top: 10px<br>right: 10px</div>
+        <p>Se posiciona relativo al padre con position no static</p>
+    </div>
+
+    <h2>Fixed</h2>
+    <div class="caja fixed">Fixed<br>bottom: 20px<br>right: 20px</div>
+    <p>Elemento fixed que queda fijo al hacer scroll (abajo derecha)</p>
+
+    <h2>Sticky</h2>
+    <div class="caja sticky">Sticky<br>top: 0</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Haz scroll para ver el efecto sticky</p>
+    <br><br><br><br><br><br><br><br><br><br>
+    <p>Mas contenido para hacer scroll...</p>
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

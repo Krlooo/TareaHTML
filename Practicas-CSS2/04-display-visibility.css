@@ -1,0 +1,50 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    color: #666;
+    margin-top: 30px;
+}
+
+.block {
+    display: block;
+    background-color: lightblue;
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.inline {
+    display: inline;
+    background-color: lightgreen;
+    border: 2px solid green;
+    padding: 10px;
+    margin: 5px;
+}
+
+.caja {
+    background-color: lightcoral;
+    border: 2px solid red;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.display-none {
+    display: none;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+}
+
+p {
+    color: #666;
+    font-style: italic;
+}

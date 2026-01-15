@@ -1,0 +1,60 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    color: #666;
+    margin-top: 30px;
+}
+
+#menu1 ul {
+    background-color: yellow;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu1 li {
+    display: inline;
+    font-size: 20px;
+    padding: 20px;
+    border: 2px solid orange;
+}
+
+#menu2 ul {
+    background-color: lightblue;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu2 li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    border: 2px solid blue;
+    width: 150px;
+    text-align: center;
+}
+
+.caja {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    background-color: lightcoral;
+    border: 2px solid red;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+p {
+    color: #666;
+    font-style: italic;
+}
